@@ -8,7 +8,7 @@ gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 
-faces = face_cascade.detectMultiScale(gray,1.1,4)
+faces = face_cascade.detectMultiScale(gray)
 
 for (x,y,w,h) in faces:
     print("x" + str(x));
